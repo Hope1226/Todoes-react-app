@@ -11,11 +11,6 @@ function App() {
       title: '',
       id: uniqid(),
       completed: false,
-      completeTask(){
-        setTask({
-          completed: true,
-        })
-      },
     }
   );
 
@@ -35,6 +30,23 @@ function App() {
     setTask({title: ''})
   }
 
+  const completeTask = (e) => {
+    if(tasks[e.target.id].completed === true){
+    setTask(tasks[e.target.id].completed = false)
+    } else {
+      setTask(tasks[e.target.id].completed = true)
+    };
+  }
+
+  const deleteTask = () => {
+    setTasks(
+        tasks.filter((task) => {
+        return task.completed === false
+        }
+      )
+    );
+  }
+
 
   return (
     <div className="App">
@@ -44,7 +56,12 @@ function App() {
           <button type="submit"><img src={addIcon} alt="add icon" /></button>
         </form>
           {tasks.length > 0 ? 
-          <Task tasks={tasks} className={task.completed ? "active" : ""}/> :
+          <Task 
+            tasks={tasks} 
+            completeTaskfunction={completeTask} 
+            className={task.completed ? "active" : ""} 
+            deleteFuntion={deleteTask}
+            /> :
           <h1>No tasks</h1>}
       </div>
     </div>
