@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/%7BTodoes-react-app%7D/static/css/main.d6d82a43.chunk.css",
+    "main.js": "/%7BTodoes-react-app%7D/static/js/main.de4f0b1b.chunk.js",
+    "main.js.map": "/%7BTodoes-react-app%7D/static/js/main.de4f0b1b.chunk.js.map",
+    "runtime-main.js": "/%7BTodoes-react-app%7D/static/js/runtime-main.d269ec33.js",
+    "runtime-main.js.map": "/%7BTodoes-react-app%7D/static/js/runtime-main.d269ec33.js.map",
+    "static/js/2.2f6d13c2.chunk.js": "/%7BTodoes-react-app%7D/static/js/2.2f6d13c2.chunk.js",
+    "static/js/2.2f6d13c2.chunk.js.map": "/%7BTodoes-react-app%7D/static/js/2.2f6d13c2.chunk.js.map",
+    "static/js/3.ed8b1075.chunk.js": "/%7BTodoes-react-app%7D/static/js/3.ed8b1075.chunk.js",
+    "static/js/3.ed8b1075.chunk.js.map": "/%7BTodoes-react-app%7D/static/js/3.ed8b1075.chunk.js.map",
+    "index.html": "/%7BTodoes-react-app%7D/index.html",
+    "static/css/main.d6d82a43.chunk.css.map": "/%7BTodoes-react-app%7D/static/css/main.d6d82a43.chunk.css.map",
+    "static/js/2.2f6d13c2.chunk.js.LICENSE.txt": "/%7BTodoes-react-app%7D/static/js/2.2f6d13c2.chunk.js.LICENSE.txt",
+    "static/media/add-icon.c822c5db.svg": "/%7BTodoes-react-app%7D/static/media/add-icon.c822c5db.svg",
+    "static/media/delete-icon.1a2e42f5.svg": "/%7BTodoes-react-app%7D/static/media/delete-icon.1a2e42f5.svg",
+    "static/media/menu.863607ad.svg": "/%7BTodoes-react-app%7D/static/media/menu.863607ad.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d269ec33.js",
+    "static/js/2.2f6d13c2.chunk.js",
+    "static/css/main.d6d82a43.chunk.css",
+    "static/js/main.de4f0b1b.chunk.js"
+  ]
+}
