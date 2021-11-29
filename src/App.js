@@ -31,11 +31,12 @@ function App() {
   }
 
   const completeTask = (e) => {
-    if(tasks[e.target.id].completed === true){
-    setTask(tasks[e.target.id].completed = false)
-    } else {
+    if(e.target.checked){
       setTask(tasks[e.target.id].completed = true)
+    } else {
+      setTask(tasks[e.target.id].completed = false)
     };
+    console.log(tasks[e.target.id])
   }
 
   const deleteTask = () => {
@@ -45,11 +46,15 @@ function App() {
         }
       )
     );
-  }
 
+    console.log(tasks)
+  }
 
   return (
     <div className="App">
+      <header>
+        <h1 className="heroText">ToDoes</h1>
+      </header>
       <div className="main-dispaly">
         <form className="add-tasks" onSubmit={submitTask}>
           <input type="text" placeholder="Add a taks..." required onChange={handleInput}/>
