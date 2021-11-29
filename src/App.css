@@ -1,9 +1,16 @@
 .App {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
   justify-items: center;
   align-items: center;
+  padding: 20px;
+}
+
+.menu-btn {
+  justify-self: start;
+  background: none;
+  border: none;
 }
 
 .heroText {
@@ -40,6 +47,7 @@
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(16px);
   border: none;
+  z-index: 1;
 }
 
 .main-dispaly form input:focus {
@@ -81,7 +89,7 @@
 }
 
 .taks-container .task button:disabled {
-  background: transparent; 
+  background: transparent;
 }
 
 .taks-container .task:nth-child(odd) {
