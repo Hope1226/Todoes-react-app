@@ -31,10 +31,10 @@ Install or update on your local terminal the node.js package.
 
 To get a local copy up and running follow these simple steps.
 
-To setup the Three Pizza Guyzz project in your local, in the repo page:
+To setup the todoes-react project in your local, in the repo page:
 click on code (dropdown list) > Download as ZIP;
 or open terminal of path you want to install project and run this command <br>
-`git clone git@github.com:nicupop729/JavaScript-Capstone.git`
+`git clone git@github.com:Hope1226/Todoes-react-app.git`
 
 ### Install
 
