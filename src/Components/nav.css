@@ -1,0 +1,44 @@
+nav {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 100%;
+  overflow-y: hidden;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(16px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.2s;
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.521);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.63);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul li:first-child > * {
+  text-align: right;
+}
+
+.navOpen {
+  right: 75%;
+}

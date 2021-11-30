@@ -1,18 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# ToDoes React App
 
-> One paragraph statement about the project.
+> Simple app to create a to-do list for day built with React.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+ToDoes assist you in creating list of tasks for the day, you can add task, mark them completed and also delete completed tasks. The app has been built with React within the microverse curriculum
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/CSS JS
+- React
+- GitFlow
 
 ## Live Demo
 
@@ -21,39 +21,39 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Install or update on your local terminal the node.js package.
+
 ### Setup
+
+To get a local copy up and running follow these simple steps.
+
+To setup the todoes-react project in your local, in the repo page:
+click on code (dropdown list) > Download as ZIP;
+or open terminal of path you want to install project and run this command <br>
+`git clone git@github.com:Hope1226/Todoes-react-app.git`
 
 ### Install
 
-### Usage
+Run in your terminal the following commands:
 
-### Run tests
-
-### Deployment
+**`$ cd todoes-react-app/`**<br>
+**`$ npm install`**<br>
+**`$ npm run build`**<br>
+**`$ npm start`**
 
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Umidjon Ustabaev (Hope)**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Hope1226)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/umidjon-ustabaev-03b92b11a/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
