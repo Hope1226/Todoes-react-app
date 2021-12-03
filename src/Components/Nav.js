@@ -9,18 +9,10 @@ const Nav = (props) => {
   return (
     <nav className={className}>
       <ul>
-        <li>
-          <a href="#" onClick={closeFunction}>X</a>
-        </li>
-        <li>
-          <a href="#" onClick={onclickFunction}>Home</a>
-        </li>
-        <li>
-          <a href="#" onClick={onclickFunction}>About</a>
-        </li>
-        <li>
-          <a href="#" onClick={onclickFunction}>Contacts</a>
-        </li>
+        <li onClick={closeFunction}>X</li>
+        <li onClick={onclickFunction}>Home</li>
+        <li onClick={onclickFunction}>About</li>
+        <li onClick={onclickFunction}>Contacts</li>
       </ul>
     </nav>
   );

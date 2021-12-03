@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import uniqid from 'uniqid';
 import addIcon from './assets/icons/add-icon.svg';
 import menu from './assets/icons/menu.svg';
-import Task from './Components/Tasks';
 import './App.css';
 import Nav from './Components/Nav';
+import Todo from './Components/Todo';
+import Home from './Components/Home';
+import About from './Components/About';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -34,10 +37,10 @@ function App() {
   };
 
   const completeTask = (e) => {
-    if (e.target.checked) {
-      setTask(tasks[e.target.id].completed = true);
-    } else {
+    if (tasks[e.target.id].completed === true) {
       setTask(tasks[e.target.id].completed = false);
+    } else {
+      setTask(tasks[e.target.id].completed = true);
     }
   };
 
@@ -56,29 +59,30 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <button type="button" className="menu-btn" onClick={openNav}><img src={menu} alt="menu" /></button>
-      <Nav className={nav ? 'navOpen' : ''} closeFunction={closeNav} />
-      <header>
-        <h1 className="heroText">ToDoes</h1>
-      </header>
-      <div className="main-dispaly">
-        <form className="add-tasks" onSubmit={submitTask}>
-          <input type="text" placeholder="Add a taks..." required onChange={handleInput} />
-          <button type="submit"><img src={addIcon} alt="add icon" /></button>
-        </form>
-        {tasks.length > 0
-          ? (
-            <Task
-              tasks={tasks}
-              completeTaskfunction={completeTask}
-              className={task.completed ? 'active' : ''}
-              deleteFuntion={deleteTask}
-            />
-          )
-          : <h1>No tasks</h1>}
+    <BrowserRouter>
+      <div className="App">
+        <button type="button" className="menu-btn" onClick={openNav}><img src={menu} alt="menu" /></button>
+        <Nav className={nav ? 'navOpen' : ''} closeFunction={closeNav} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/Todo"
+            element={(
+              <Todo
+                submitTask={submitTask}
+                handleInput={handleInput}
+                addIcon={addIcon}
+                tasks={tasks}
+                completeTask={completeTask}
+                task={task}
+                deleteTask={deleteTask}
+              />
+          )}
+          />
+          <Route path="/about" element={<About />} />
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
