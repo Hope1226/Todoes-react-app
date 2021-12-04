@@ -28,11 +28,5 @@ const Nav = (props) => {
   );
 };
 
-Nav.propTypes = {
-  className: PropTypes.instanceOf(String).isRequired,
-  onclickFunction: PropTypes.func.isRequired,
-  closeFunction: PropTypes.func.isRequired,
-};
-
 export default Nav;
 /* eslint-disable */
