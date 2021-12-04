@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from 'prop-types';
 import deleteIcon from '../assets/icons/delete-icon.svg';
+import './tasks.css';
 
 const Task = (props) => {
   const {
@@ -10,20 +11,13 @@ const Task = (props) => {
     <div className="taks-container">
       {tasks.map((task) => (
         <div className="task" key={task.id}>
-          <input type="checkbox" id={tasks.indexOf(task)} onChange={completeTaskfunction} />
+          <input type="checkbox" className="checkboxes" id={task.id} onChange={completeTaskfunction} />
           <h2>{task.title}</h2>
           <button type="button" className={className} disabled={!task.completed} onClick={deleteFuntion}><img src={deleteIcon} alt="delete icon" /></button>
         </div>
       ))}
     </div>
   );
-};
-
-Task.propTypes = {
-  tasks: PropTypes.instanceOf(Array).isRequired,
-  className: PropTypes.instanceOf(String).isRequired,
-  completeTaskfunction: PropTypes.func.isRequired,
-  deleteFuntion: PropTypes.func.isRequired,
 };
 
 export default Task;

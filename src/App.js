@@ -33,15 +33,22 @@ function App() {
     setTasks(
       tasks.concat(task),
     );
-    setTask({ title: '' });
+    setTask({
+      title: '',
+      id: uniqid(),
+      completed: false,
+    });
   };
 
   const completeTask = (e) => {
-    if (tasks[e.target.id].completed === true) {
-      setTask(tasks[e.target.id].completed = false);
-    } else {
-      setTask(tasks[e.target.id].completed = true);
-    }
+    setTasks(tasks.map((task) => {
+      if (task.id === e.target.id) {
+        return {
+          ...task, completed: !task.completed,
+        };
+      }
+      return task;
+    }));
   };
 
   const deleteTask = () => {
