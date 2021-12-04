@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import Task from './Tasks';
+import './todo.css';
 
 const Todo = (props) => {
   const {

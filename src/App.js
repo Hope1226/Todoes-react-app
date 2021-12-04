@@ -64,9 +64,9 @@ function App() {
         <button type="button" className="menu-btn" onClick={openNav}><img src={menu} alt="menu" /></button>
         <Nav className={nav ? 'navOpen' : ''} closeFunction={closeNav} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route
-            path="/Todo"
+            path="/todo"
             element={(
               <Todo
                 submitTask={submitTask}
